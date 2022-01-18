@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Launch</title>
+    <script src="./main.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <img class="image-top" src="./images/top-image.svg" alt="top">
+    <img class="img-bottom" src="./images/bottom-image.svg" alt="low">
+    <img class="img-rocket" src="./images/rocket.svg" alt="rocket">
+    <main>
+        <div>
+            <h1 class="launch">READY TO LAUNCH IN...</h1>
+        </div>
+        <div class="div-date">
+            <p id="days">Days</p>
+            <p id="hours">Hours</p>
+            <p id="minutes">Minutes</p>
+            <p id="seconds">Seconds</p>
+        </div>
+        <div id="timer"></div>
+        <div>
+            <p id="subscribe">Subscribe to learn more about the launch</p>
+                <button id="button" type="submit" onclick="Modal.open()">
+                    <p id="button-text">Subscribe</p>
+                </button>
+        </div>
+    </main>
+
+    <div class="modal-overlay">
+        <div class="modal-content">
+  
+            <div class="form-group">
+              <input type="text" class="input-control" placeholder="Name"/>
+              <span class="error"></span>
+              <input type="email" class="input-control" placeholder="Email"/>
+              <span class="error"></span>
+              </div>
+
+            <div class="form-group">
+              <input
+                type="input-control"
+                placeholder="Adress"
+                class="input-control"
+              />
+            </div>
+  
+            <div class="form-group">
+              <input
+                type="input-control"
+                placeholder="City"
+                style="flex: 3 1"
+                class="input-control"
+              />
+              <input
+                class="input-control"
+                type="input-control"
+                placeholder="State"
+                style="flex: 1"
+              />
+              <input
+                type="input-control"
+                placeholder="CEP"
+                style="flex: 1"
+                class="input-control"
+              />
+            </div>
+  
+            <div class="form-group button">
+              <button id="button-save" type="submit" class="button-save" onclick="Modal.close()">
+                Save
+              </button>
+              <div class="form-group button">
+              <button type="submit" id="button-cancel" class="button-cancel" onclick="Modal.close()">
+                Cancel</button>
+            </div>
+            </div>
+          </form>
+        </div>
+      </div>
+</body>
+</html>
